@@ -1,1 +1,25 @@
-<Label text="about page" textWrap="true"></Label>
+<FlexboxLayout height="100%" justifyContent="center" alignItems="center">
+  <StackLayout class="container">
+    <Label class="title" text="About Color Match" textWrap="true"></Label>
+    <Label
+      class="desc"
+      text="Color match is a simple mobile game that I made to learn how to make apps with a technology called nativescript. It's not meant to be an official game but just a demo app. I'm primarily a web developer / designer who's looking to get started with app development as well. I am currently accepting freelance contracts so If you're hiring for those roles then feel free to reach out."
+      textWrap="true"
+    ></Label>
+    <Button
+      class="twitter-btn"
+      text="Twitter"
+      (tap)="openLink('https://twitter.com/nk13_codes')"
+    ></Button>
+    <Button
+      class="insta-btn"
+      text="Instagram"
+      (tap)="openLink('https://instagram.com/nk13_codes')"
+    ></Button>
+    <Button
+      class="website-btn"
+      text="Website"
+      (tap)="openLink('https://studiodagger.com/')"
+    ></Button>
+  </StackLayout>
+</FlexboxLayout>

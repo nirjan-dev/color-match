@@ -6,7 +6,11 @@
 >
   <StackLayout>
     <Label text="Welcome to Color match" class="title" textWrap="true"></Label>
-    <Button class="btn-primary" text="Play the Game"></Button>
+    <Button
+      class="btn-primary"
+      text="Play the Game"
+      (tap)="playGame()"
+    ></Button>
     <Button class="btn-default" text="How to Play"></Button>
   </StackLayout>
 </FlexboxLayout>

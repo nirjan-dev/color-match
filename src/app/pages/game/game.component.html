@@ -1,0 +1,35 @@
+<FlexboxLayout height="100%" justifyContent="center" alignItems="center">
+  <StackLayout *ngIf="!gameOver">
+    <Label class="score" [text]="'score:' + score" textWrap="true"></Label>
+
+    <Label
+      [style.color]="currentColor"
+      class="color-text"
+      [text]="currentColorText"
+      textWrap="true"
+    ></Label>
+    <FlexboxLayout>
+      <Button
+        class="match-btn"
+        text="Match"
+        (tap)="handleBtnClick('match')"
+      ></Button>
+      <Button
+        class="no-match-btn"
+        text="No Match"
+        (tap)="handleBtnClick('no-match')"
+      ></Button>
+    </FlexboxLayout>
+  </StackLayout>
+
+  <StackLayout *ngIf="gameOver">
+    <Label text="Game Over" class="game-over" textWrap="true"></Label>
+    <Label
+      [text]="'Final score:' + score"
+      class="score"
+      textWrap="true"
+    ></Label>
+    <Button text="Play again" class="restart-btn" (tap)="startGame()"></Button>
+    <Button text="Save score" class="save-btn" (tap)="saveScore()"></Button>
+  </StackLayout>
+</FlexboxLayout>

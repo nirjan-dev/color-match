@@ -1,0 +1,25 @@
+.color-text {
+  font-size: 70;
+  font-weight: bold;
+  margin: 20 0;
+}
+
+.score {
+  font-size: 25;
+}
+
+.match-btn {
+  background-color: #1b5e20;
+  color: white;
+}
+
+.no-match-btn {
+  background: #b71c1c;
+  color: #fff;
+}
+
+.game-over {
+  font-size: 40;
+  color: #b71c1c;
+  font-weight: bold;
+}

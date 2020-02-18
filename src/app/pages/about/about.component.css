@@ -1,0 +1,28 @@
+.title {
+  font-size: 25;
+  margin-bottom: 10;
+}
+
+.container {
+  padding: 20;
+}
+
+.desc {
+  font-size: 18;
+  margin-bottom: 10;
+}
+
+.twitter-btn {
+  color: #fff;
+  background: #1da1f2;
+}
+
+.insta-btn {
+  background-color: #fb3958;
+  color: #fff;
+}
+
+.website-btn {
+  background: rebeccapurple;
+  color: #fff;
+}
