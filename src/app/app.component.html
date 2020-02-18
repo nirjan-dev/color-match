@@ -1,3 +1,8 @@
 <!-- https://docs.nativescript.org/angular/core-concepts/angular-navigation.html#page-router-outlet -->
-<page-router-outlet></page-router-outlet>
-<app-bottom-nav></app-bottom-nav>>
+<GridLayout rows="* auto" colunms="*">
+  <StackLayout row="0" class="p-20">
+    <router-outlet></router-outlet>
+  </StackLayout>
+
+  <app-bottom-nav row="1"></app-bottom-nav>
+</GridLayout>

@@ -1,8 +1,12 @@
 import { NgModule, NO_ERRORS_SCHEMA } from "@angular/core";
 import { NativeScriptModule } from "nativescript-angular/nativescript.module";
+import { BubbleNavigationModule } from "nativescript-bubble-navigation/angular";
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { HomeComponent } from "./pages/home/home.component";
+import { BottomNavComponent } from "./components/bottom-nav/bottom-nav.component";
+import { AboutComponent } from "./pages/about/about.component";
+import { ScoresComponent } from "./pages/scores/scores.component";
 
 // Uncomment and add to NgModule imports if you need to use two-way binding
 // import { NativeScriptFormsModule } from "nativescript-angular/forms";
@@ -12,8 +16,14 @@ import { HomeComponent } from "./pages/home/home.component";
 
 @NgModule({
     bootstrap: [AppComponent],
-    imports: [NativeScriptModule, AppRoutingModule],
-    declarations: [AppComponent, HomeComponent],
+    imports: [NativeScriptModule, AppRoutingModule, BubbleNavigationModule],
+    declarations: [
+        AppComponent,
+        HomeComponent,
+        BottomNavComponent,
+        AboutComponent,
+        ScoresComponent
+    ],
     providers: [],
     schemas: [NO_ERRORS_SCHEMA]
 })
